@@ -364,7 +364,6 @@ function translateText(textArray, targetLanguage) {
 
 // Helper function to update the asset in SQL
 const updateAssetInSQL = (updatedData) => {
-  alert(JSON.stringify(updatedData));
   $.ajax({
     url: `${UIAURI0}${updatedData.MediaID}${UIAURI1}`, // Update endpoint 
     type: "PUT",
